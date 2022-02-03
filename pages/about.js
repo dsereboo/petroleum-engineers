@@ -59,7 +59,7 @@ export default function About() {
                 </p>
                 <p className="is-size-5 mb-3">
                   Petroleum Engineers is the sole importer of Lanfeng Fuel
-                  Dispensers which is gaining grounds in the country due to it's
+                  Dispensers which is gaining grounds in the country due to its
                   efficiency, durability and cost effectiveness. We also have
                   quality control certification from Ghana, China, Russia among
                   others.

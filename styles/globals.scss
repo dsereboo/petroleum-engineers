@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+//Brand colours
+$blood:#B50009;
+$sea:#06004B;
+$darkness:#1E1E1E;
+$contactBlack:#1F1F1F;
+$formYellow:#FFCE00;
+$myRadius:10px;
+$inform:#FFE577;
+
+
+
+
+//Colors
+$danger:$blood;
+$black:$contactBlack;
+$yellow:$formYellow;
+$yellow-ligt:$inform;
+$link:$sea;
+
+
+//Navbar items
+$navbar-item-color:$sea;
+$navbar-item-hover-color: $blood ;
+$navbar-item-active-color: $blood;
+$navbar-item-img-max-height:2.75rem;
+// $navbar-item-hover-background-color:#fff;
+
+
+//Footer items
+$footer-background-color:$darkness;
+
+//Forms
+// $control-radius:$myRadius;
+$box-radius:$myRadius;
+
+//Background
+
+.yellow-light{
+   background-color:#FFE577;
+
+}
+
+
+
+
+@import "~bulma/bulma.sass";
+

@@ -14,3 +14,53 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-img{
+  background-image: url("../public/images/sideImage.png"), url("../public/images/tool.png") ;
+  background-position: right center, center center;
+  background-repeat:  no-repeat, no-repeat; 
+  background-attachment: fixed, fixed;
+  background-size:  contain, cover;
+}
+
+@media screen and (max-width:768px) {
+  .bg-img{
+    background-image: url("../public/images/tool.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.is-size-jumbo{
+  font-size: 5rem;
+}
+
+.contact-details{
+  margin-left:2rem;
+  
+}
+
+.contact-form{
+  margin-left: 2rem;
+  padding: 2rem !important;
+}
+
+@media screen and (max-width:768px) {
+    .contact-form{
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      padding: 1.5rem !important;
+    }
+
+    .contact-details{
+      margin-left:0.5rem;
+      margin-right: 0.5rem;
+    }
+}
+
+.footer-top{
+  border-top-width:5rem;
+  border-top-color:#B50009 ;
+}

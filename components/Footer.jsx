@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer=()=>{
     return(
-        <footer className="footer">
+        <footer className="footer footer-top">
           <div className="container is-max-widescreen">
                 <div className="columns ">
                     <div className="column is-3 is-offset-1 has-text-white has-justify-content-space-between">

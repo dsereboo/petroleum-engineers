@@ -7,14 +7,14 @@ export default function About() {
   return (
     <Layout>
       <div className="hero ">
-        <Image src={image} />
+        <Image src={image} alt="about hero"/>
       </div>
       <div className="section">
         <div className="container">
           <p className="title  has-text-link is-hidden-tablet">About Us</p>
           <div className="columns">
             <div className="column is-5">
-              <Image src={image2} layout="responsive" />
+              <Image src={image2} layout="responsive" alt="description" />
             </div>
             <div className="column is-6 ml-3">
               <article>
@@ -73,18 +73,18 @@ export default function About() {
               </article>
             </div>
             <div className="column is-5">
-              <div class="tile is-ancestor">
-                <div class="tile is-4 is-vertical is-parent">
-                  <div class="tile is-child ">
-                    <Image src={image2} layout="intrinsic" />
+              <div className="tile is-ancestor">
+                <div className="tile is-4 is-vertical is-parent">
+                  <div className="tile is-child ">
+                    <Image src={image2} layout="intrinsic" alt="service" />
                   </div>
-                  <div class="tile is-vertical is-child ">
-                    <Image src={image2} layout="responsive" />
+                  <div className="tile is-vertical is-child ">
+                    <Image src={image2} layout="responsive" alt="service" />
                   </div>
                 </div>
-                <div class="tile is-parent">
-                  <div class="tile is-child">
-                    <Image src={image2} layout="responsive" />
+                <div className="tile is-parent">
+                  <div className="tile is-child">
+                    <Image src={image2} layout="responsive" alt="service" />
                   </div>
                 </div>
               </div>

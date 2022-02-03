@@ -2,6 +2,7 @@ import Head from "next/head"
 import Contact from "./Contact"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
+import Partners from "./Partners"
 
 const Layout=({children})=>{
     return(
@@ -13,7 +14,8 @@ const Layout=({children})=>{
             <main className="container is-fullhd">
                 {children}
             </main> 
-                <Contact/>
+            <Partners/>
+            <Contact/>
             <div className="container is-fullhd">
             <Footer/>
             </div>          

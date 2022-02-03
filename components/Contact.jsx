@@ -1,9 +1,23 @@
+import { useState } from "react";
+
 const Contact=()=>{
+
+  const[details,setDetails]=useState({
+    name:"",
+    contact:"",
+    email:"",
+    message:"",
+  })
+
+  const handleChange=(event)=>{
+      setDetails({...details, [event.target.name]:event.target.value})
+  }
+
+
     return (
-      <section className="section ">
-        <div className="container pl-4">
+      <section className="section has-background-light has-navbar-fixed-top " id="contact">
           <div className="columns">
-            <div className="column box py-6 px-5 is-4 mb-2 has-background-black">
+            <div className="column box py-6 px-5 is-4 mr-0  mb-2 has-background-black contact-details">
               <div className="container is-flex is-justify-content-justify is-align-content-center ">
                 <article>
                 <div className="mb-6">
@@ -19,7 +33,7 @@ const Contact=()=>{
                 </article>
               </div>
             </div>
-            <div className="column box is-7 ml-5 mr-0  mb-2 has-background-warning px-6 py-6 contact-form">
+            <div className="column box is-7 mr-0 mb-2 has-background-warning contact-form">
               <article>
                 <p className="is-size-4 has-text-weight-medium has-text-black mb-4">
                   Contact us
@@ -38,6 +52,8 @@ const Contact=()=>{
                         className="input"
                         type="text"
                         placeholder="Your Name"
+                        name="name"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="field">
@@ -45,6 +61,8 @@ const Contact=()=>{
                         className="input"
                         type="text"
                         placeholder="Your Contact"
+                        name="contact"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -55,6 +73,8 @@ const Contact=()=>{
                       className="input"
                       type="text"
                       placeholder="Your email"
+                      name="email"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -64,6 +84,8 @@ const Contact=()=>{
                       className="textarea"
                       type="text"
                       placeholder="Message"
+                      name="message"
+                      onChange={handleChange}
                     ></textarea>
                   </div>
                 </div>
@@ -73,7 +95,6 @@ const Contact=()=>{
               </form>
             </div>
           </div>
-        </div>
       </section>
     );
 }

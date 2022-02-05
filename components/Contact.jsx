@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AiOutlineExclamationCircle} from "react-icons/ai"
+import { IconContext } from "react-icons";
 
 const Contact=()=>{
 
@@ -17,7 +19,7 @@ const Contact=()=>{
     return (
       <section className="section has-background-light has-navbar-fixed-top " id="contact">
           <div className="columns">
-            <div className="column box py-6 px-5 is-4 mr-0  mb-2 has-background-black contact-details">
+            <div className="column box py-6 px-5 is-4  mb-2 has-background-black contact-details">
               <div className="container is-flex is-justify-content-justify is-align-content-center ">
                 <article>
                 <div className="mb-6">
@@ -33,16 +35,21 @@ const Contact=()=>{
                 </article>
               </div>
             </div>
-            <div className="column box is-7 mr-0 mb-2 has-background-warning contact-form">
+            <div className="column box is-7  mb-2 has-background-warning contact-form">
               <article>
                 <p className="is-size-4 has-text-weight-medium has-text-black mb-4">
                   Contact us
                 </p>
               </article>
               <article className="block yellow-light px-2 py-2">
-                  <p className="has-text-black">
+                <div className="is-flex is-flex-direction-row  is-align-items-center">
+                <IconContext.Provider value={{size:"1.2em"}}>
+                      <AiOutlineExclamationCircle className="is-hidden-touch"/>
+                  </IconContext.Provider> 
+                <p className="has-text-black ml-1">
                     Please fill in your info, we will contact you soon.
                   </p>
+                </div>
               </article>
               <form>
                 <div className="field is-horizontal">

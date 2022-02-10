@@ -17,7 +17,7 @@ const Contact=()=>{
 
 
     return (
-      <section className="section has-background-light has-navbar-fixed-top " id="contact">
+      <section className="section has-background-light  " id="contact">
           <div className="columns">
             <div className="column box py-6 px-5 is-4  mb-2 has-background-black contact-details">
               <div className="container is-flex is-justify-content-justify is-align-content-center ">

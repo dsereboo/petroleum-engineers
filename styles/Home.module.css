@@ -1,6 +1,6 @@
 .word {
-  width: 250px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
+  max-width: 35ch;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

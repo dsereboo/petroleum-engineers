@@ -14,8 +14,11 @@ const Layout=({children})=>{
             <main className="container is-fullhd">
                 {children}
             </main> 
-            <Partners/>
-            <Contact/>
+            <div className="container is-fullhd">
+                <Partners/>
+                 <Contact/>
+            </div>
+           
             <div className="container is-fullhd">
             <Footer/>
             </div>          

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Layout from "../components/Layout";
-import ServiceCard from "../components/ServiceCard";
 import ServiceRows from "../components/ServiceRows";
+
 
 const Services = () => {
   return (
@@ -21,9 +21,8 @@ const Services = () => {
       <section className="section">
           <div className="columns">
               <div className="column is-offset-1">
-                 <p className="has-text-centered-mobile has-text-danger">Projects we worked on</p>
-              </div>
-             
+                <p className="has-text-centered-mobile has-text-danger">Projects we worked on</p>
+              </div>  
           </div>       
       </section>
     

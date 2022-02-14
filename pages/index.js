@@ -11,6 +11,7 @@ import Partners from '../components/Partners'
 import ProductCard from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
   return (
     <div className="has-background-light">
@@ -20,10 +21,12 @@ export default function Home() {
             <p className="is-size-4 has-text-danger has-text-centered">
               OUR COMPANY
             </p>
+          
             <p className='is-size-2-desktop is-size-5-mobile has-text-black has-text-centered '>
               At Petroleum Engineers, we believe that our customers deserve the
               best and thus we deliver nothing but the best.
             </p>
+          
           </article>
         </div>
         <section className='section'>

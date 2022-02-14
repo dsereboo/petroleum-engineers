@@ -1,3 +1,4 @@
+import Link from "next/link"
 import CompanyCard from "./CompanyCard"
 
 
@@ -24,7 +25,7 @@ const CompanyRow=()=>{
                 )
             }
             <div className="container is-flex is-justify-content-center mt-4">
-                <button className="button is-link">More About us &gt; </button>
+                <button className="button is-link"><Link href="/about">More About us &gt;</Link> </button>
             </div>
         </div>
     )

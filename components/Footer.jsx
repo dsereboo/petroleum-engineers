@@ -5,8 +5,9 @@ import { IconContext } from "react-icons"
 
 const Footer=()=>{
     return(
+        <div className="container is-fullhd">
         <footer className="footer footer-top">
-          <div className="container is-max-widescreen">
+          <div className="container">
                 <div className="columns ">
                     <div className="column is-3 is-offset-1 has-text-white has-justify-content-space-between">
                         <h1 className="is-size-5 mb-1">Quick Links</h1>
@@ -48,6 +49,7 @@ const Footer=()=>{
                 <p className="has-text-centered has-text-white">© 2021 Petroleum Engineers. All Rights Reserved</p>
             </div>
         </footer>
+        </div>
     )
 }
 

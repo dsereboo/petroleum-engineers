@@ -19,9 +19,9 @@ const Layout=({children})=>{
                  <Contact/>
             </div>
            
-            <div className="container is-fullhd">
+          
             <Footer/>
-            </div>          
+                   
         </div>
     )
 }

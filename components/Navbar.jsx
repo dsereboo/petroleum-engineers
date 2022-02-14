@@ -15,11 +15,11 @@ const Navbar=()=>{
     return (
       <>
         <nav
-          className="navbar is-fixed-top signal-navbar"
+          className="navbar is-fixed-top signal-navbar nav-bottom"
           aria-label="main navigation"
           role="navigation"
         >
-          <div className="container is-max-widescreen">
+          <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="#">
                 <Image src={logo} height={250} width={938}  alt="signal logo"/>

@@ -29,10 +29,19 @@ const ProjectPage=()=>{
           
             <section className="section">
                 <div className="container">
-                    <p className="is-size-3 has-text-link has-text-weight-bold">Project Name</p>
-                    <p>
+                    <article>
+                     <p className="is-size-3 has-text-link has-text-weight-bold mb-2">Project Name</p>
+                        <p>
                     Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, 
                     </p>
+                    </article>
+                 
+                
+                </div>
+                <div className="container">
+                <article>
+                    <p className="is-size-3 has-text-link has-text-weight-bold">Other Projects</p>
+                    </article>
                 </div>
             </section>
         </Layout>

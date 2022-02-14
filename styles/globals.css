@@ -61,10 +61,18 @@ a {
 }
 
 .footer-top{
-  border-top-width:5rem;
+  border-top-width:0.4rem;
   border-top-color:#B50009 ;
+  border-top-style: solid;
 }
 
 .boy{
   width: 100%;
 }
+
+.nav-bottom{
+  border-bottom-style: solid;
+  border-bottom-width: 0.05rem;
+  border-bottom-color: #e8e8e8;
+}
+

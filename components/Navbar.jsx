@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import logo from "../public/images/logo.png"
 //  avbar.module.css"
 
 
@@ -21,7 +22,7 @@ const Navbar=()=>{
           <div className="container is-max-widescreen">
             <div className="navbar-brand">
               <a className="navbar-item" href="#">
-                <Image src="https://firebasestorage.googleapis.com/v0/b/codetrainproject-4c734.appspot.com/o/new.png?alt=media&token=df2d4ba1-7dfb-40e7-afc7-7911dfc63259" height={250} width={938}  alt="signal logo"/>
+                <Image src={logo} height={250} width={938}  alt="signal logo"/>
               </a>
               <a
                 className={active? "navbar-burger is-active":"navbar-burger"}

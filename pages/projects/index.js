@@ -25,7 +25,7 @@ const Projects=()=>{
                     data.map(
                         (item)=>{
                             return(
-                                <div className="column is-4">
+                                <div key={item.id} className="column is-4">
                                     <ServiceCard/>
                                 </div>
                             )

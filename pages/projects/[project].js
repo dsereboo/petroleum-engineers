@@ -15,9 +15,6 @@ const ProjectPage=()=>{
     ]
     return (
         <Layout>
-            <section className="hero">
-
-       
             <ImageGallery
               items={images}
               showThumbnails={false}
@@ -29,7 +26,15 @@ const ProjectPage=()=>{
               autoPlay={true}
               additionalClass="boy"
             />
-                </section>
+          
+            <section className="section">
+                <div className="container">
+                    <p className="is-size-3 has-text-link has-text-weight-bold">Project Name</p>
+                    <p>
+                    Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, Project Description goes into this paragraph, 
+                    </p>
+                </div>
+            </section>
         </Layout>
     );
 }

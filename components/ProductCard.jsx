@@ -5,7 +5,7 @@ const ProductCard=({data})=>{
    return(
     <div className="container ml-2 mr-2">
         <figure>
-          <Image src={image} alt="petroleum product"/>
+          <Image src={data.image} width={335} height={398}  alt="petroleum product"/>
         </figure> 
         <article>
             <div className="level mb-0 is-mobile">

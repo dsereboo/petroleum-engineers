@@ -6,7 +6,8 @@ const ProjectPage=()=>{
     const images=[
         {
             original:"/images/projectsHero.png",
-            originalWidth:"100"
+            originalWidth:"100",
+           
            
         },
         { original:"/images/hero2.png"},
@@ -26,8 +27,7 @@ const ProjectPage=()=>{
               showNav={false}
               autoPlay={true}
               additionalClass="boy"
-            />
-          
+            />          
             <section className="section">
                 <div className="container">
                     <article>

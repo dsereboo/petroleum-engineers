@@ -47,7 +47,7 @@ $box-radius:$myRadius;
 
 .image-gallery-image {
    width: 100%;
-   object-fit: none;
+   object-fit: none !important;
  }
 
 

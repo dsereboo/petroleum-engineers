@@ -12,17 +12,18 @@ import ProductCard from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
 
 
-export default function Home() {
+
+export default function Home(props) {
   return (
     <div className="has-background-light">
-      <Layout>
+      <Layout props={props}>
         <div className="section has-background-light">
-          <article >
+          <article className='' >
             <p className="is-size-4 has-text-danger has-text-centered">
               OUR COMPANY
             </p>
           
-            <p className='is-size-2-desktop is-size-5-mobile has-text-black has-text-centered '>
+            <p className={"is-size-2-desktop is-size-5-mobile has-text-black has-text-centered"}>
               At Petroleum Engineers, we believe that our customers deserve the
               best and thus we deliver nothing but the best.
             </p>
@@ -38,4 +39,18 @@ export default function Home() {
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps(){
+    const service_id= process.env.SERVICE_ID
+    const template_id=process.env.TEMPLATE_ID
+    const user_id=process.env.USER_ID
+
+    return{
+      props:{
+        service:service_id,
+        template:template_id,
+        user:user_id,
+      }
+    }
 }

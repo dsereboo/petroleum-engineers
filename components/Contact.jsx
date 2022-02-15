@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { AiOutlineExclamationCircle} from "react-icons/ai"
 import { IconContext } from "react-icons";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import toast from "react-hot-toast";
 
-const Contact=()=>{
+const Contact=(props)=>{
 
+  const form=useRef()
+  
   const[details,setDetails]=useState({
     name:"",
     contact:"",
@@ -13,6 +18,16 @@ const Contact=()=>{
 
   const handleChange=(event)=>{
       setDetails({...details, [event.target.name]:event.target.value})
+  }
+
+  const handleSubmit=(event)=>{
+      event.preventDefault()
+      const sendMaiL=emailjs.sendForm(props.props.service,props.props.template,form.current,props.props.user)
+      toast.promise(sendMaiL,{
+        loading:"Loading",
+        success:"Message Sent",
+        error:"Error"
+      })
   }
 
 
@@ -51,7 +66,7 @@ const Contact=()=>{
                   </p>
                 </div>
               </article>
-              <form>
+              <form ref={form}>
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
@@ -97,7 +112,7 @@ const Contact=()=>{
                   </div>
                 </div>
                 <div>
-                  <button className="button is-black">Send Message</button>
+                  <button type="submit" onClick={handleSubmit} className="button is-black">Send Message</button>
                 </div>
               </form>
             </div>

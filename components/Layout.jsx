@@ -1,10 +1,11 @@
 import Head from "next/head"
+import { Toaster } from "react-hot-toast"
 import Contact from "./Contact"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
 import Partners from "./Partners"
 
-const Layout=({children})=>{
+const Layout=({children,props})=>{
     return(
         <div>
             <Head>
@@ -13,10 +14,16 @@ const Layout=({children})=>{
             <Navbar/>      
             <main className="container is-fullhd">
                 {children}
+                <Toaster
+                    position="top-center"
+                    reverseOrder={false}
+                    gutter={8}
+                  
+                />
             </main> 
             <div className="container is-fullhd">
                 <Partners/>
-                 <Contact/>
+                 <Contact props={props} />
             </div>
            
           

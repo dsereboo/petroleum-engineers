@@ -45,6 +45,11 @@ $box-radius:$myRadius;
 
 }
 
+.image-gallery-image {
+   width: 100%;
+   // object-fit: contain;
+ }
+
 
 
 @import "~react-image-gallery/styles/scss/image-gallery.scss";

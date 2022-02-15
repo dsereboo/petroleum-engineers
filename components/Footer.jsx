@@ -5,7 +5,8 @@ import { IconContext } from "react-icons"
 
 const Footer=()=>{
     return(
-        <div className="container is-fullhd">
+        <>
+      
         <footer className="footer footer-top">
           <div className="container">
                 <div className="columns ">
@@ -49,7 +50,7 @@ const Footer=()=>{
                 <p className="has-text-centered has-text-white">© 2021 Petroleum Engineers. All Rights Reserved</p>
             </div>
         </footer>
-        </div>
+        </>
     )
 }
 

@@ -41,7 +41,7 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const service_id= process.env.SERVICE_ID
     const template_id=process.env.TEMPLATE_ID
     const user_id=process.env.USER_ID

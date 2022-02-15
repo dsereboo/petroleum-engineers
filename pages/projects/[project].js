@@ -6,6 +6,7 @@ const ProjectPage=()=>{
     const images=[
         {
             original:"/images/projectsHero.png",
+            originalWidth:"100"
            
         },
         { original:"/images/hero2.png"},

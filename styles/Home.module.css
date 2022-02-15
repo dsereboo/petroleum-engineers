@@ -1,6 +1,8 @@
 .word {
-  max-width: 35ch;
+  max-width: 55ch;
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+

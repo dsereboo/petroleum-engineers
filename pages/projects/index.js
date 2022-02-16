@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Image from "next/image"
 import Layout from "../../components/Layout"
 import ProjectCard from "../../components/ProjectCard"
@@ -17,6 +18,10 @@ const Projects=()=>{
 
     return(
         <Layout>
+            <Head>
+                <title>Projects</title>
+                <meta name="description" content="Page displaying projects we have worked on at Petroleum Engineers"/>
+            </Head>
             <section className="hero bg-img">
                 <Image src={image1} alt="projects-hero"/>
             </section>  

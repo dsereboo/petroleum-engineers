@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Head from "next/head"
 import Image from "next/image";
 import image from "../public/images/hero2.png";
 import image2 from "../public/images/about1.png";
@@ -6,6 +7,10 @@ import image2 from "../public/images/about1.png";
 export default function About() {
   return (
     <Layout>
+      <Head>
+        <title>About</title>
+        <meta name="description" content="Page displaying who we are at Petroleum Engineers"/>
+      </Head>
       <div className="hero ">
         <Image src={image} alt="about hero"/>
       </div>

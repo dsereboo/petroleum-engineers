@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import ImageGallery from "react-image-gallery";
 import { BiCaretRightCircle} from 'react-icons/bi'
 import { useState } from "react";
+import Head from "next/head"
 
 export default function Home(props) {
 
@@ -13,16 +14,25 @@ export default function Home(props) {
     {
       original:"/images/site.png",
       loading:"eager",
+      originalWidth:"1440",
+      orignalHeight:"882",
     },
     {
       original: "/images/projectsHero.png",
       originalWidth: "100",
-      loading:"eager",
+      loading:"lazy",
     },
-    { original: "/images/hero2.png",loading:"eager", },
+    { original: "/images/hero2.png",
+      loading:"eager", 
+      originalWidth:"1440",
+      orignalHeight:"882",
+      
+    },
     {
       original: "/images/tool.png",
-      loading:"eager",
+      loading:"lazy",
+      originalWidth:"1440",
+      orignalHeight:"882",
     },
   ];
 
@@ -32,30 +42,39 @@ export default function Home(props) {
 
   return (
     <div className="has-background-light">
+      <Head>
+        <title>Homepage</title>
+        <meta name="description" content="Landing page showcasing Petroleum Engineers"/>
+      </Head>
       <Layout props={props}>
         <div className="carousel-holder hero is-full-height-with-navbar">
-        <ImageGallery
-          items={images}
-          showThumbnails={false}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          showBullets={true}
-          useBrowserFullscreen={false}
-          showNav={false}
-          autoPlay={play}
-          onImageLoad={handlePlay}
-          additionalClass="boy"
-        />
+          <ImageGallery
+            items={images}
+            showThumbnails={false}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showBullets={true}
+            useBrowserFullscreen={false}
+            showNav={false}
+            lazyLoad={true}
+            autoPlay={true}
+            slideDuration={650}
+            // onImageLoad={handlePlay}
+            additionalClass="boy"
+          />
 
-        <div className="text-block is-shadowless has-background-light is-hidden-touch">
-          <div className="card-body">
-            <p className="has-text-danger is-size-3 mb-4">Welcome</p>
-            <p className="is-size-2 mb-5 has-text-black">
-              We are experience work-lovers focused on quality
-            </p>       
-              <p className="has-text-danger is-size-3 is-flex is-align-items-center pb-2">View our projects<BiCaretRightCircle/></p> 
+          <div className="text-block is-shadowless has-background-light is-hidden-touch">
+            <div className="card-body">
+              <p className="has-text-danger is-size-3 mb-4">Welcome</p>
+              <p className="is-size-2 mb-5 has-text-black">
+                We are experience work-lovers focused on quality
+              </p>
+              <p className="has-text-danger is-size-3 is-flex is-align-items-center pb-2">
+                View our projects
+                <BiCaretRightCircle />
+              </p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="section has-background-light des">
           <article className="des">

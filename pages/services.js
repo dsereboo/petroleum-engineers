@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import ServiceRows from "../components/ServiceRows";
 
@@ -5,6 +6,10 @@ import ServiceRows from "../components/ServiceRows";
 const Services = () => {
   return (
     <Layout>
+      <Head>
+        <title>Services</title>
+        <meta name="description" content="Page displaying our services at Petroleum Engineers"/>
+      </Head>
       <section className="hero  is-large bg-img mt-4">
         <div className="hero-body">
           <article>

@@ -5,14 +5,14 @@ const ProjectPage=(props)=>{
 
     const images=[
         {
-            original:"/images/projectsHero.png",
+            original:"/images/projectsHero.webp",
             originalWidth:"100",
            
            
         },
         { original:"/images/hero2.png"},
         {
-            original:"/images/tool.png"
+            original:"/images/tool.webp"
         }
     ]
     return (

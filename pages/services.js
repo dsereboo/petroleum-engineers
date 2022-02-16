@@ -1,9 +1,20 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import ServiceRows from "../components/ServiceRows";
+import WorkedProjectsCard from "../components/WorkedProjectsCard";
 
 
 const Services = (props) => {
+
+  const data=[
+    {id:"dsjods", title:"Project1"},
+    {id:"dssadods", title:"Project2"},
+    {id:"ds32jods", title:"Project3"},
+    {id:"dsjo45ds", title:"Project4"},
+    {id:"dsjo675ds", title:"Project4"},
+    
+  ]
+
   return (
     <Layout props={props}>
       <Head>
@@ -22,9 +33,22 @@ const Services = (props) => {
       <section className="section">
          <ServiceRows/>
       </section>
-      <section className="section">
-        <p className="is-size-4 has-text-weight-bold has-text-centered-mobile has-text-danger">Projects we worked on</p>  
-        
+      <section className="section other-projects">
+
+        <p className="is-size-4 has-text-weight-bold has-text-centered-mobile has-text-danger mb-5">Projects we worked on</p>  
+        <div className="columns is-multiline">
+          {
+            data.map(
+              (item)=>{
+                return(
+                  <div key={item.id} className="column is-2">
+                    <WorkedProjectsCard data={item}/>
+                  </div>
+                )
+              }
+            )
+          }
+        </div>
       </section>
     
     </Layout>

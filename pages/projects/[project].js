@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout"
 import  ImageGallery  from "react-image-gallery"
 
-const ProjectPage=()=>{
+const ProjectPage=(props)=>{
 
     const images=[
         {
@@ -16,7 +16,7 @@ const ProjectPage=()=>{
         }
     ]
     return (
-        <Layout>
+        <Layout props={props}>
             <ImageGallery
               items={images}
               showThumbnails={false}
@@ -51,3 +51,17 @@ const ProjectPage=()=>{
 
 
 export default ProjectPage
+
+export async function getServerSideProps() {
+    const service_id = process.env.SERVICE_ID;
+    const template_id = process.env.TEMPLATE_ID;
+    const user_id = process.env.USER_ID;
+  
+    return {
+      props: {
+        service: service_id,
+        template: template_id,
+        user: user_id,
+      },
+    };
+  }

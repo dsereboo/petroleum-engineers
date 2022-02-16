@@ -15,24 +15,29 @@ export default function Home(props) {
       original:"/images/site.png",
       loading:"eager",
       originalWidth:"1440",
-      orignalHeight:"882",
+      originalHeight:"882",
+      originalAlt:"Worksite picture"
     },
     {
       original: "/images/projectsHero.png",
-      originalWidth: "100",
+      originalHeight:"882",
+      originalWidth: "1440",
       loading:"lazy",
+      originalAlt:"dsad"
     },
     { original: "/images/hero2.png",
       loading:"eager", 
       originalWidth:"1440",
-      orignalHeight:"882",
+      originalHeight:"882",
+      originalAlt:"Worksite picture"
       
     },
     {
       original: "/images/tool.png",
       loading:"lazy",
       originalWidth:"1440",
-      orignalHeight:"882",
+      originalHeight:"882",
+      originalAlt:"Worksite picture"
     },
   ];
 
@@ -54,7 +59,6 @@ export default function Home(props) {
             showPlayButton={false}
             showFullscreenButton={false}
             showBullets={true}
-            useBrowserFullscreen={false}
             showNav={false}
             lazyLoad={true}
             autoPlay={true}

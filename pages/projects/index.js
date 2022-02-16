@@ -4,7 +4,7 @@ import Layout from "../../components/Layout"
 import ProjectCard from "../../components/ProjectCard"
 import image1 from "../../public/images/projectsHero.png"
 
-const Projects=()=>{
+const Projects=(props)=>{
 
     const data=[
         {id:1, name:"Total Sakumono"},
@@ -17,7 +17,7 @@ const Projects=()=>{
 
 
     return(
-        <Layout>
+        <Layout props={props}>
             <Head>
                 <title>Projects</title>
                 <meta name="description" content="Page displaying projects we have worked on at Petroleum Engineers"/>
@@ -45,3 +45,17 @@ const Projects=()=>{
 }
 
 export default Projects
+
+export async function getServerSideProps() {
+    const service_id = process.env.SERVICE_ID;
+    const template_id = process.env.TEMPLATE_ID;
+    const user_id = process.env.USER_ID;
+  
+    return {
+      props: {
+        service: service_id,
+        template: template_id,
+        user: user_id,
+      },
+    };
+  }

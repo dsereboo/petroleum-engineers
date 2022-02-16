@@ -4,9 +4,9 @@ import Image from "next/image";
 import image from "../public/images/hero2.png";
 import image2 from "../public/images/about1.png";
 
-export default function About() {
+export default function About(props) {
   return (
-    <Layout>
+    <Layout props={props}>
       <Head>
         <title>About</title>
         <meta name="description" content="Page displaying who we are at Petroleum Engineers"/>
@@ -99,4 +99,18 @@ export default function About() {
       </div>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  const service_id = process.env.SERVICE_ID;
+  const template_id = process.env.TEMPLATE_ID;
+  const user_id = process.env.USER_ID;
+
+  return {
+    props: {
+      service: service_id,
+      template: template_id,
+      user: user_id,
+    },
+  };
 }

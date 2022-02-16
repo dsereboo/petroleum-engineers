@@ -3,9 +3,9 @@ import Layout from "../components/Layout";
 import ServiceRows from "../components/ServiceRows";
 
 
-const Services = () => {
+const Services = (props) => {
   return (
-    <Layout>
+    <Layout props={props}>
       <Head>
         <title>Services</title>
         <meta name="description" content="Page displaying our services at Petroleum Engineers"/>
@@ -35,3 +35,17 @@ const Services = () => {
 };
 
 export default Services;
+
+export async function getServerSideProps() {
+  const service_id = process.env.SERVICE_ID;
+  const template_id = process.env.TEMPLATE_ID;
+  const user_id = process.env.USER_ID;
+
+  return {
+    props: {
+      service: service_id,
+      template: template_id,
+      user: user_id,
+    },
+  };
+}

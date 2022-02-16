@@ -66,7 +66,7 @@ const Contact=(props)=>{
                   </p>
                 </div>
               </article>
-              <form ref={form}>
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
@@ -76,6 +76,7 @@ const Contact=(props)=>{
                         placeholder="Your Name"
                         name="name"
                         onChange={handleChange}
+                        required
                       />
                     </div>
                     <div className="field">
@@ -85,6 +86,7 @@ const Contact=(props)=>{
                         placeholder="Your Contact"
                         name="contact"
                         onChange={handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -97,6 +99,7 @@ const Contact=(props)=>{
                       placeholder="Your email"
                       name="email"
                       onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
@@ -108,11 +111,12 @@ const Contact=(props)=>{
                       placeholder="Message"
                       name="message"
                       onChange={handleChange}
+                      required
                     ></textarea>
                   </div>
                 </div>
                 <div>
-                  <button type="submit" onClick={handleSubmit} className="button is-black">Send Message</button>
+                  <button type="submit" className="button is-black">Send Message</button>
                 </div>
               </form>
             </div>

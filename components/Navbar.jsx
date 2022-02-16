@@ -22,7 +22,7 @@ const Navbar=()=>{
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="#">
-                <Image src={logo} height={250} width={938}  alt="signal logo"/>
+                <Image src={logo} height={250} width={938}  alt="signal logo" priority/>
               </a>
               <a
                 className={active? "navbar-burger is-active":"navbar-burger"}

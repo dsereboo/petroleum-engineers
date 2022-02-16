@@ -23,11 +23,8 @@ const Services = (props) => {
          <ServiceRows/>
       </section>
       <section className="section">
-          <div className="columns">
-              <div className="column is-offset-1">
-                <p className="has-text-centered-mobile has-text-danger">Projects we worked on</p>
-              </div>  
-          </div>       
+        <p className="is-size-4 has-text-weight-bold has-text-centered-mobile has-text-danger">Projects we worked on</p>  
+        
       </section>
     
     </Layout>

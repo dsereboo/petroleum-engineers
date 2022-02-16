@@ -12,32 +12,36 @@ export default function Home(props) {
 
   const images = [
     {
-      original:"/images/site.png",
-      loading:"eager",
+      original:"/images/site.webp",
+      loading:"lazy",
       originalWidth:"1440",
       originalHeight:"882",
-      originalAlt:"Worksite picture"
+      originalAlt:"Worksite picture",
+      srcSet:"/images/site.webp"
     },
     {
-      original: "/images/projectsHero.png",
+      original: "/images/projectsHero.webp",
       originalHeight:"882",
       originalWidth: "1440",
       loading:"lazy",
-      originalAlt:"dsad"
+      originalAlt:"dsad",
+      srcSet:"/images/projectsHero.webp"
     },
     { original: "/images/hero2.png",
-      loading:"eager", 
+      loading:"lazy", 
       originalWidth:"1440",
       originalHeight:"882",
-      originalAlt:"Worksite picture"
+      originalAlt:"hero2 picture",
+      srcSet:"/images/hero2.png"
       
     },
     {
-      original: "/images/tool.png",
+      original: "/images/tool.webp",
       loading:"lazy",
       originalWidth:"1440",
       originalHeight:"882",
-      originalAlt:"Worksite picture"
+      originalAlt:"Tool picture",
+      srcSet:"/images/tool.webp"
     },
   ];
 

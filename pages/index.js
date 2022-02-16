@@ -1,32 +1,34 @@
-import Head from "next/head";
-import Image from "next/image";
-import CompanyCard from "../components/CompanyCard";
 import CompanyRow from "../components/CompanyRow";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import HotProducts from "../components/HotProducts";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
-import Partners from "../components/Partners";
-import ProductCard from "../components/ProductCard";
-import styles from "../styles/Home.module.css";
 import ImageGallery from "react-image-gallery";
 import { BiCaretRightCircle} from 'react-icons/bi'
+import { useState } from "react";
 
 export default function Home(props) {
+
+  const [play,setPlay]=useState(false)
+
   const images = [
     {
-      original:"/images/site.png"
+      original:"/images/site.png",
+      loading:"eager",
     },
     {
       original: "/images/projectsHero.png",
       originalWidth: "100",
+      loading:"eager",
     },
-    { original: "/images/hero2.png" },
+    { original: "/images/hero2.png",loading:"eager", },
     {
       original: "/images/tool.png",
+      loading:"eager",
     },
   ];
+
+  const handlePlay=(prevState)=>{
+    setPlay(!prevState)
+  }
 
   return (
     <div className="has-background-light">
@@ -40,22 +42,23 @@ export default function Home(props) {
           showBullets={true}
           useBrowserFullscreen={false}
           showNav={false}
-          autoPlay={true}
+          autoPlay={play}
+          onImageLoad={handlePlay}
           additionalClass="boy"
         />
 
-        <div className="text-block is-shadowless has-background-light is-hidden-mobile">
+        <div className="text-block is-shadowless has-background-light is-hidden-touch">
           <div className="card-body">
             <p className="has-text-danger is-size-3 mb-4">Welcome</p>
             <p className="is-size-2 mb-5 has-text-black">
               We are experience work-lovers focused on quality
             </p>       
-              <p className="has-text-danger is-size-3 is-flex is-align-items-center">View our projects<BiCaretRightCircle/></p> 
+              <p className="has-text-danger is-size-3 is-flex is-align-items-center pb-2">View our projects<BiCaretRightCircle/></p> 
           </div>
         </div>
         </div>
-        <div className="section has-background-light">
-          <article className="">
+        <div className="section has-background-light des">
+          <article className="des">
             <p className="is-size-3 has-text-danger has-text-centered">
               OUR COMPANY
             </p>
@@ -74,8 +77,6 @@ export default function Home(props) {
           <CompanyRow />
         </section>
         <HotProducts />
-        {/* <Contact/> */}
-        {/* <ProductCard/> */}
       </Layout>
     </div>
   );

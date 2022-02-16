@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard"  
+
 const HotProducts=()=>{
 
     const data=[

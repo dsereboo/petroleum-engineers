@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Layout from "../../components/Layout"
 import ProjectCard from "../../components/ProjectCard"
-import ServiceRows from "../../components/ServiceRows"
 import image1 from "../../public/images/projectsHero.png"
 
 const Projects=()=>{
@@ -14,6 +13,8 @@ const Projects=()=>{
         {id:6, name:"Total Oyarifa"},
         {id:5, name:"Peduase Goil"},
     ]
+
+
     return(
         <Layout>
             <section className="hero bg-img">

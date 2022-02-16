@@ -1,5 +1,6 @@
 import Image from "next/image"
 import image from "../public/images/service3.png"
+
 const ServiceCard=()=>{
     return(
         <div className="card is-shadowless is-clickable">

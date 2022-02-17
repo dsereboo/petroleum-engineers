@@ -66,7 +66,7 @@ export default function Home(props) {
             showNav={false}
             lazyLoad={true}
             autoPlay={true}
-            slideDuration={650}
+            slideDuration={1000}
             // onImageLoad={handlePlay}
             additionalClass="boy"
           />

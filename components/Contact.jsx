@@ -8,13 +8,14 @@ import toast from "react-hot-toast";
 const Contact=(props)=>{
 
   const form=useRef()
-  
-  const[details,setDetails]=useState({
+  const initialState={
     name:"",
     contact:"",
     email:"",
     message:"",
-  })
+  }
+  
+  const[details,setDetails]=useState(initialState)
 
   const handleChange=(event)=>{
       setDetails({...details, [event.target.name]:event.target.value})
@@ -24,10 +25,13 @@ const Contact=(props)=>{
       event.preventDefault()
       const sendMaiL=emailjs.sendForm(props.props.service,props.props.template,form.current,props.props.user)
       toast.promise(sendMaiL,{
-        loading:"Loading",
+        loading:"Sending Message",
         success:"Message Sent",
         error:"Error"
-      })
+      }).then(
+        ()=>{  setDetails(initialState)}
+      )
+    
   }
 
 
@@ -76,6 +80,7 @@ const Contact=(props)=>{
                         placeholder="Your Name"
                         name="name"
                         onChange={handleChange}
+                        value={details.name}
                         required
                       />
                     </div>
@@ -86,6 +91,7 @@ const Contact=(props)=>{
                         placeholder="Your Contact"
                         name="contact"
                         onChange={handleChange}
+                        value={details.contact}
                         required
                       />
                     </div>
@@ -99,6 +105,7 @@ const Contact=(props)=>{
                       placeholder="Your email"
                       name="email"
                       onChange={handleChange}
+                      value={details.email}
                       required
                     />
                   </div>
@@ -111,6 +118,7 @@ const Contact=(props)=>{
                       placeholder="Message"
                       name="message"
                       onChange={handleChange}
+                      value={details.message}
                       required
                     ></textarea>
                   </div>

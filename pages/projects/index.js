@@ -22,8 +22,8 @@ const Projects=(props)=>{
                 <title>Projects</title>
                 <meta name="description" content="Page displaying projects we have worked on at Petroleum Engineers"/>
             </Head>
-            <section className="hero bg-img">
-                <Image src={image1} alt="projects-hero"/>
+            <section className="hero">
+                <Image src={image1} height={670} width={1344} alt="projects-hero"/>
             </section>  
             <section className="section">
                 <div className="columns is-multiline">

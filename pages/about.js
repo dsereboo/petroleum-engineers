@@ -12,7 +12,7 @@ export default function About(props) {
         <meta name="description" content="Page displaying who we are at Petroleum Engineers"/>
       </Head>
       <div className="hero ">
-        <Image src={image} alt="about hero"/>
+        <Image src={image} height={670} width={1344} alt="about hero"/>
       </div>
       <div className="section">
         <div className="container">

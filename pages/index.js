@@ -88,7 +88,7 @@ export default function Home(props) {
             additionalClass="boy"
           />
 
-          <div className="text-block is-shadowless has-background-light">
+          <div className="text-block is-shadowless has-background-light is-hidden-tablet-only">
             <div className="card-body">
               <p className="has-text-danger is-size-3 mb-4 font-m ">Welcome</p>
               <p className="mb-5 has-text-black font-b ">

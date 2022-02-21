@@ -121,7 +121,6 @@ a {
       width: 25rem;
       display: flex;
       justify-content: space-between;
-     
       background-color: black;
       color: white;
       padding-left: 20px;
@@ -130,14 +129,14 @@ a {
     }
 }
 
-@media screen and (min-width:1042px) and (max-width:1122px){
+@media screen and (min-width:1042px) and (max-width:1149px){
   .text-block{
     position: absolute;
-    top:15rem;
+    top:11rem;
     right: 60rem;
     left: 3rem;
     bottom: 18rem;
-    height: 25rem;
+    height: 30rem;
     width: 25rem;
     display: flex;
     justify-content: space-between;
@@ -145,7 +144,67 @@ a {
     background-color: black;
     color: white;
     padding-left: 20px;
-    padding-top: 3rem;
+    padding-top: 2rem;
+   
+  }
+}
+
+@media screen and (min-width:1150px) and (max-width:1177px) {
+  .text-block{
+    position: absolute;
+    top:12rem;
+    right: 60rem;
+    left: 3rem;
+    bottom: 18rem;
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2rem;
+   
+  }
+}
+
+@media screen and (min-width:1178px) and (max-width:1205px) {
+  .text-block{
+    position: absolute;
+    top:13rem;
+    right: 60rem;
+    left: 3rem;
+    bottom: 18rem;
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2rem;
+   
+  }
+}
+
+@media screen and (min-width:1206px) and (max-width:1238px) {
+  .text-block{
+    position: absolute;
+    top:14.2rem;
+    right: 60rem;
+    left: 3rem;
+    bottom: 18rem;
+    height:30rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2rem;
    
   }
 }
@@ -156,16 +215,16 @@ a {
     top:10.1rem;
     right: 60rem;
     left: 5rem;
-    bottom: 20rem;
+    /* bottom: 20rem; */
     height: 30rem;
     width: 25rem;
     display: flex;
     justify-content: space-between;
-    
     background-color: black;
     color: white;
     padding-left: 20px;
     padding-top: 3rem;
+   
    
   }
 }
@@ -197,7 +256,7 @@ a {
 .font-b{
   font-family: 'Mongolian Baiti';
   font-weight: 400;
-  line-height: 60px;
+  line-height: 58px;
   font-size: 3.5rem ; 
 }
 

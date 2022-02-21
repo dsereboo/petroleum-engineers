@@ -80,16 +80,16 @@ export default function About(props) {
             <div className="column is-5">
               <div className="tile is-ancestor">
                 <div className="tile is-4 is-vertical is-parent">
-                  <div className="tile is-child ">
-                    <Image src={image2} layout="intrinsic" alt="service" />
+                  <div className="tile is-child is-hidden-mobile">
+                    <Image src={image2} layout="intrinsic" alt="service1" />
                   </div>
-                  <div className="tile is-vertical is-child ">
-                    <Image src={image2} layout="responsive" alt="service" />
+                  <div className="tile is-vertical is-child is-hidden-mobile ">
+                    <Image src={image2} layout="responsive" alt="service2" />
                   </div>
                 </div>
                 <div className="tile is-parent">
                   <div className="tile is-child">
-                    <Image src={image2} layout="responsive" alt="service" />
+                    <Image src={image2} layout="responsive" alt="service3" />
                   </div>
                 </div>
               </div>

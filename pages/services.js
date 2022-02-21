@@ -21,7 +21,7 @@ const Services = (props) => {
         <title>Services</title>
         <meta name="description" content="Page displaying our services at Petroleum Engineers"/>
       </Head>
-      <section className="hero  is-large bg-img mt-4">
+      <section className="hero  is-large bg-img ">
         <div className="hero-body">
           <article>
             <p className="is-size-jumbo is-size-1-mobile has-text-centered-mobile  has-text-right-desktop has-text-white has-text-weight-bold">

@@ -5,6 +5,8 @@ import ImageGallery from "react-image-gallery";
 import { BiCaretRightCircle} from 'react-icons/bi'
 import { useState } from "react";
 import Head from "next/head"
+import { IconContext } from "react-icons";
+import { Router, useRouter } from "next/router";
 
 export default function Home(props) {
 
@@ -49,6 +51,12 @@ export default function Home(props) {
     setPlay(!prevState)
   }
 
+  const router=useRouter()
+
+  const handleMove=()=>{
+    router.push("/projects")
+  }
+
   return (
     <div className="has-background-light">
       <Head>
@@ -71,16 +79,21 @@ export default function Home(props) {
             additionalClass="boy"
           />
 
-          <div className="text-block is-shadowless has-background-light is-hidden-touch">
+          <div className="text-block is-shadowless has-background-light ">
             <div className="card-body">
-              <p className="has-text-danger is-size-3 mb-4">Welcome</p>
+              <p className="has-text-danger is-size-3 mb-4 ">Welcome</p>
               <p className="is-size-2 mb-5 has-text-black">
                 We are experience work-lovers focused on quality
               </p>
-              <p className="has-text-danger is-size-3 is-flex is-align-items-center pb-2">
-                View our projects
-                <BiCaretRightCircle />
+              <div className="is-flex is-align-items-center is-justify-content-flex-start">
+              <p className="has-text-danger is-size-3 is-size-3-mobile is-flex is-align-items-center pb-2 mr-6">
+                View our projects   
               </p>
+              <IconContext.Provider value={{color:"#B50009", size:"2.25em", }}>
+                <BiCaretRightCircle  className="ml-2 is-clickable" onClick={handleMove}/>
+              </IconContext.Provider>
+           
+              </div> 
             </div>
           </div>
         </div>

@@ -21,9 +21,11 @@ const Navbar=()=>{
         >
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item" href="/">
+              <Link href="/">
+              <a className="navbar-item">
                 <Image src={logo} height={250} width={938}  alt="signal logo" priority/>
               </a>
+              </Link>
               <a
                 className={active? "navbar-burger is-active":"navbar-burger"}
                 role="button"

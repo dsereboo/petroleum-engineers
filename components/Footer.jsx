@@ -1,6 +1,7 @@
 import { MdOutlineMailOutline,MdOutlineLocationOn} from "react-icons/md"
 import{FiPhone} from "react-icons/fi"
 import { IconContext } from "react-icons"
+import Link from "next/link"
 
 
 const Footer=()=>{
@@ -12,8 +13,8 @@ const Footer=()=>{
                 <div className="columns ">
                     <div className="column is-3 is-offset-1 has-text-white has-justify-content-space-between">
                         <h1 className="is-size-5 mb-1">Quick Links</h1>
-                        <p className="is-size-6 mb-1">Home</p>
-                        <p className="mb-1">Our Products</p>
+                     <a  href="/" className="is-size-6 mb-1 has-text-white">Home</a>
+                       <p className="mb-1">Our Products</p>
                         <p className="mb-1">About Us</p>
                         <p className="mb-1">Contact Us</p>
                     </div>

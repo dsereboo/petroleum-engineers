@@ -6,15 +6,25 @@ const ProjectPage=(props)=>{
     const images=[
         {
             original:"/images/projectsHero.webp",
-            originalWidth:"100",
-           
-           
+            loading:"lazy",
+            originalHeight:"882",
+            originalWidth: "1440",  
+            originalAlt:"Worksite picture",
         },
-        { original:"/images/hero2.png"},
+        { 
+            original:"/images/hero2.png",
+            originalHeight:"882",
+            originalWidth: "1440",
+            originalAlt:"Worksite picture",
+        },
         {
-            original:"/images/tool.webp"
+            original:"/images/tool.webp",
+            originalHeight:"882",
+            originalWidth: "1440",
+            originalAlt:"Worksite picture",
         }
     ]
+
     return (
         <Layout props={props}>
             <ImageGallery

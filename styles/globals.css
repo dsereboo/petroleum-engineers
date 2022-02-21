@@ -94,6 +94,21 @@ a {
 
 }
 
+@media screen and (max-width:768px) {
+    .text-block{
+      position:inherit;
+      top:0rem;
+      left: 0rem;
+      margin-bottom: 1rem;
+      height: auto;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+     
+
+    }  
+}
+
 @media screen and (min-width:1023px) and (max-width:1041px){
     .text-block{
       position: absolute;

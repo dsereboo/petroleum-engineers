@@ -78,18 +78,19 @@ a {
 
 .text-block {
   position: absolute;
-  top:12.05rem;
+  top:11.4rem;
   right: 60rem;
   left: 5rem;
   /* bottom: 10rem; */
-  height: 35vw;
+  height: 36vw;
   width: 25rem;
   /* right: 20px; */
   background-color: black;
   color: white;
   padding-left: 20px;
-  padding-top: 3rem;
-  margin-bottom: 15rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1rem;
+  /* margin-bottom: 15rem; */
 
 
 }
@@ -182,4 +183,28 @@ a {
 .other-projects{
   margin-left: 8.33333337%;
 }
+
+.font-m{
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Mongolian Baiti';
+  src: url("../public/monbaiti.ttf");
+  font-style: normal;
+}
+
+.font-b{
+  font-family: 'Mongolian Baiti';
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 3.5rem ; 
+}
+
+.description{
+  font-family: 'Mongolian Baiti';
+  font-weight: 400;
+}
+
+
 

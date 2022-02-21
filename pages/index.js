@@ -61,7 +61,16 @@ export default function Home(props) {
     <div className="has-background-light">
       <Head>
         <title>Homepage</title>
-        <meta name="description" content="Landing page showcasing Petroleum Engineers"/>
+        <meta
+          name="description"
+          content="Landing page showcasing Petroleum Engineers"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Layout props={props}>
         <div className="carousel-holder hero is-full-height-with-navbar">
@@ -79,21 +88,25 @@ export default function Home(props) {
             additionalClass="boy"
           />
 
-          <div className="text-block is-shadowless has-background-light ">
+          <div className="text-block is-shadowless has-background-light">
             <div className="card-body">
-              <p className="has-text-danger is-size-3 mb-4 ">Welcome</p>
-              <p className="is-size-2 mb-5 has-text-black">
-                We are experience work-lovers focused on quality
+              <p className="has-text-danger is-size-3 mb-4 font-m ">Welcome</p>
+              <p className="mb-5 has-text-black font-b ">
+                We are experienced work-lovers focused on quality
               </p>
               <div className="is-flex is-align-items-center is-justify-content-flex-start">
-              <p className="has-text-danger is-size-3 is-size-3-mobile is-flex is-align-items-center pb-2 mr-6">
-                View our projects   
-              </p>
-              <IconContext.Provider value={{color:"#B50009", size:"2.25em", }}>
-                <BiCaretRightCircle  className="ml-2 is-clickable" onClick={handleMove}/>
-              </IconContext.Provider>
-           
-              </div> 
+                <p className="has-text-danger font-m is-size-3 is-size-3-mobile is-flex is-align-items-center  mr-6">
+                  View our projects
+                </p>
+                <IconContext.Provider
+                  value={{ color: "#B50009", size:"2.25em" }}
+                >
+                  <BiCaretRightCircle
+                    className="ml-2 is-clickable"
+                    onClick={handleMove}
+                  />
+                </IconContext.Provider>
+              </div>
             </div>
           </div>
         </div>
@@ -105,7 +118,7 @@ export default function Home(props) {
 
             <p
               className={
-                "is-size-2-desktop is-size-5-mobile has-text-black has-text-centered"
+                "is-size-2-desktop is-size-5-mobile has-text-black has-text-centered description"
               }
             >
               At Petroleum Engineers, we believe that our customers deserve the

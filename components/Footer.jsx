@@ -13,7 +13,7 @@ const Footer=()=>{
                 <div className="columns ">
                     <div className="column is-3 is-offset-1 has-text-white has-justify-content-space-between">
                         <h1 className="is-size-5 mb-1">Quick Links</h1>
-                     <a  href="/" className="is-size-6 mb-1 has-text-white">Home</a>
+                     <p  href="/" className="is-size-6 mb-1 has-text-white">Home</p>
                        <p className="mb-1">Our Products</p>
                         <p className="mb-1">About Us</p>
                         <p className="mb-1">Contact Us</p>

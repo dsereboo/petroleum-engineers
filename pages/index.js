@@ -90,12 +90,12 @@ export default function Home(props) {
 
           <div className="text-block is-shadowless has-background-light is-hidden-tablet-only">
             <div className="card-body">
-              <p className="has-text-danger is-size-3 mb-4 font-m ">Welcome</p>
+              <p className="has-text-danger is-size-3 is-size-4-mobile mb-4 font-m ">Welcome</p>
               <p className="mb-5 has-text-black font-b ">
                 We are experienced work-lovers focused on quality
               </p>
               <div className="is-flex is-align-items-center is-justify-content-flex-start">
-                <p className="has-text-danger font-m is-size-3 is-size-3-mobile is-flex is-align-items-center  mr-6">
+                <p className="has-text-danger font-m is-size-3 is-size-4-mobile is-size-3-mobile is-flex is-align-items-center  mr-6">
                   View our projects
                 </p>
                 <IconContext.Provider

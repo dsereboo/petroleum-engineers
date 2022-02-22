@@ -7,16 +7,18 @@ import Link from "next/link"
 const Footer=()=>{
     return(
         <>
-      
         <footer className="footer footer-top">
           <div className="container">
                 <div className="columns ">
                     <div className="column is-3 is-offset-1 has-text-white has-justify-content-space-between">
                         <h1 className="is-size-5 mb-1">Quick Links</h1>
-                     <p  href="/" className="is-size-6 mb-1 has-text-white">Home</p>
-                       <p className="mb-1">Our Products</p>
-                        <p className="mb-1">About Us</p>
-                        <p className="mb-1">Contact Us</p>
+                        <ul>
+                       <li className="mb-1"><Link href="/"><a className="is-size-6  has-text-white is-clickable">Home</a></Link></li>
+                      <li className="mb-1"><Link href="/services"  ><a className="footer-link is-size-6">Our Services</a></Link></li>
+                      <li className="mb-1"><Link href="/about"><a className="footer-link">About Us</a></Link></li>
+                       <li className="mb-1"><Link href="#contact"><a className="footer-link">Contact Us</a></Link></li>
+                        </ul>
+                      
                     </div>
                     <div className="column is-8-mobile is-3-desktop is-8-tablet is-offset-1 is-half has-text-white">
                         <h1 className="is-size-5 mb-1">Products</h1>
@@ -25,7 +27,7 @@ const Footer=()=>{
                         <p className="mb-1">Servicing & Maintenance</p>
                         <p className="mb-1">Spare Parts</p>
                     </div>
-                    <div className="column is-4 is-half has-text-white">
+                    <div className="column is-4  is-half has-text-white">
                         <h1 className="is-size-5 mb-1">Contact Us</h1>
                         <div className="is-flex is-flex-direction-row is-align-items-center">
                         <IconContext.Provider value={{size:"1.2em"}}>

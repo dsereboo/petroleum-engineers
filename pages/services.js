@@ -11,8 +11,7 @@ const Services = (props) => {
     {id:"dssadods", title:"Project2"},
     {id:"ds32jods", title:"Project3"},
     {id:"dsjo45ds", title:"Project4"},
-    {id:"dsjo675ds", title:"Project4"},
-    
+    {id:"dsjo675ds", title:"Project4"},   
   ]
 
   return (
